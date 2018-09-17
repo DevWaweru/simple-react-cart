@@ -2,8 +2,12 @@
   "name": "cart-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://DevWaweru.github.io/simple-react-cart",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "gh-pages": "^2.0.0",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.4",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5"
@@ -12,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "gh-pages": "^2.0.0"
